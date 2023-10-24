@@ -1,1 +1,6 @@
-console.log("heloo dog")
+const ul = document.getElementById("unorderedLIst")
+console.log(ul)
+const inputFeild = document.getElementById("input")
+console.log(inputFeild)
+const addBttn = document.getElementById("addButton")
+console.log(addBttn)

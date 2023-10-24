@@ -17,9 +17,17 @@ overflow-y:scroll
 
 
 }
+ul li.checked{
+    text-decoration: line-through;
+    color: black;
+}
+ul{
+
+        margin-left: -33px;
+}
 ul li:hover{
-    scale: 1.1;
- 
+    scale: 1.02;
+ color: black;
     /* background-color: #fff;  */
     
 }
@@ -31,7 +39,9 @@ ul li:hover{
   padding-left: 20px;
   background: #edeef0;
   margin-bottom: 25px;
+  
   outline: none;
+  box-shadow: 5px 5px 10px;
 }
 #addButton{
     border: none;
@@ -42,4 +52,22 @@ ul li:hover{
     border-radius: 40px;
     background: #ff5945;
     color: #fff;
+    transition: 0.5;
+}
+#addButton:hover{
+    background-color: red;
+    scale: 1.02;
+    transition: 0.5;
+}
+.dletebtn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: auto;
+    box-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
+    text-decoration: none !important;
+}
+.dletebtn:hover{
+    color: black;
 }

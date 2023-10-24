@@ -37,7 +37,7 @@ if(event.target.className === "dletebtn"){
     let parent = event.target.parentElement
     console.log(parent)
     parent.remove()
-}else if(event.target.className === "list"){
+}else if(event.target.tagName === "LI"){
     // console.log('lisssssst')
     event.target.classList.toggle('checked')
 }

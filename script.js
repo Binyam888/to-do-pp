@@ -31,10 +31,15 @@ li.appendChild(btn)
 
 addBttn.addEventListener('click',onClick)
 ul.addEventListener('click',onDelete=(event)=>{
+    console.log(event)
 if(event.target.className === "dletebtn"){
     
     let parent = event.target.parentElement
     console.log(parent)
     parent.remove()
+}else if(event.target.className === "list"){
+    // console.log('lisssssst')
+    event.target.classList.toggle('checked')
 }
+
 })
